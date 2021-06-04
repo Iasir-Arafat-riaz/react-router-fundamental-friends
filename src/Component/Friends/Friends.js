@@ -1,10 +1,12 @@
 import React from 'react';
 
-const Friends = () => {
+const Friends = (props) => {
+    const{name,email}=props.friend
+
     return (
         <div>
-            <h1>here is friend component</h1>
-            <p>write below for update</p>
+            <h1>{name}</h1>
+            <p>email</p>
         </div>
     );
 };
