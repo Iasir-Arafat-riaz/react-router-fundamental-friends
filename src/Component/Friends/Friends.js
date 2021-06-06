@@ -11,7 +11,7 @@ const Friends = (props) => {
             <h1>{id}  {name}</h1>
             <p>email : {email}</p>
             <h4>{xd}</h4>
-            <p>ID : <Link to={`noMatch/${email}`}><button>click</button></Link> </p>
+            <p>ID : <Link to={`FriendDetail/${email}`}><button>click</button></Link> </p>
 
         </div>
     );

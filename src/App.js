@@ -26,6 +26,9 @@ function App() {
           <Route path="*">
             <NoMatch />
           </Route>
+          <Route path="/FriendDetail/:jk">
+
+          </Route>
         </Switch>
       </Router>
 
