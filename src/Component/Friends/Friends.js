@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Friends = (props) => {
     const{name,email,id}=props.friend
@@ -10,6 +11,8 @@ const Friends = (props) => {
             <h1>{id}  {name}</h1>
             <p>email : {email}</p>
             <h4>{xd}</h4>
+            <p>ID : <Link to={`noMatch/${email}`}><button>click</button></Link> </p>
+
         </div>
     );
 };
