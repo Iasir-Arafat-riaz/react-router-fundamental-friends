@@ -9,6 +9,10 @@ import {
 import Home from './Component/Home/Home';
 import NoMatch from "./Component/NoMatch/NoMatch"
 
+import Welcome from './Component/Welcome/Welcome';
+import FriendDetail from './Component/FriendDetail/FriendDetail';
+
+
 
 function App() {
 
@@ -20,15 +24,18 @@ function App() {
             <Home />
           </Route>
           <Route exact path="/">
-            <Home/>
-
-          </Route>
+            <Home />
+</Route>
+<Route path="/friend/:friendId">
+  <FriendDetail></FriendDetail>
+</Route>
+<Route path="/wel">
+  <Welcome></Welcome>
+</Route>
           <Route path="*">
             <NoMatch />
           </Route>
-          <Route path="/FriendDetail/:jk">
-
-          </Route>
+          
         </Switch>
       </Router>
 
