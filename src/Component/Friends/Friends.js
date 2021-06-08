@@ -8,10 +8,12 @@ const Friends = (props) => {
 
     return (
         <div style={friendStyle}>
-            <h1>{id}  {name}</h1>
+            <h1> {name}</h1>
             <p>email : {email}</p>
             <h4>{xd}</h4>
-            <p>ID : <Link to={`friend/${id}`}><button>click</button></Link> </p>
+            <Link to={`friend/${id}`}>
+                <button>Show Detail of {id}</button>
+                </Link> 
 
         </div>
     );
