@@ -12,13 +12,14 @@ const FriendDetail = () => {
     }, []);
 
     //destructure
-    const {email,name}=friendDetail
+    const {email,name,phone}=friendDetail
     return (
         <div>
             <h1>This is friend details {friendId}</h1>
             <h2>give us your detail</h2>
             <h3>here  - {name}</h3>
             <h3>email address : {email}</h3>
+            <p>contact number : {phone}</p>
         </div>
     );
 };
