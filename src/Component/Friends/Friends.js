@@ -21,7 +21,9 @@ const Friends = (props) => {
             <Link to={`friend/${id}`}>
                 <button>Show Detail of {id}</button>
             </Link>
-            <button onClick={()=>handleClick(id)}>show details</button>
+            <br />
+            <br />
+            <button onClick={()=>handleClick(id)}>Click Here</button>
 
         </div>
     );
