@@ -18,6 +18,7 @@ const Friends = (props) => {
             <h1> {name}</h1>
             <p>email : {email}</p>
             <h4>{xd}</h4>
+            <h5>new</h5>
             <Link to={`friend/${id}`}>
                 <button>Show Detail of {id}</button>
             </Link>
