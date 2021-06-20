@@ -8,23 +8,24 @@ const Friends = (props) => {
 
     //link er poriborte
     const history = useHistory()
-    const handleClick = (frndId)=>{
+    const handleClick = (frndId) => {
         history.push(`/friend/${frndId}`)
     }
-    
+
 
     return (
         <div style={friendStyle}>
             <h1> {name}</h1>
             <p>email : {email}</p>
             <h4>{xd}</h4>
-            
+
             <Link to={`friend/${id}`}>
                 <button>Show Detail of {id}</button>
             </Link>
             <br />
             <br />
-            <button onClick={()=>handleClick(id)}>Click Here</button>
+            <button onClick={() => handleClick(id)}>Click Here</button>
+            <h1>new add</h1>
 
         </div>
     );
