@@ -25,17 +25,17 @@ function App() {
           </Route>
           <Route exact path="/">
             <Home />
-</Route>
-<Route path="/friend/:friendId">
-  <FriendDetail></FriendDetail>
-</Route>
-<Route path="/wel">
-  <Welcome></Welcome>
-</Route>
+          </Route>
+          <Route path="/friend/:friendId">
+            <FriendDetail></FriendDetail>
+          </Route>
+          <Route path="/wel">
+            <Welcome></Welcome>
+          </Route>
           <Route path="*">
             <NoMatch />
           </Route>
-          
+
         </Switch>
       </Router>
 
